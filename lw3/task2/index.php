@@ -1,14 +1,15 @@
 <?php
 
 header("Content-Type: text/plain");
+$patern_identifier = '/^[a-zA-z]\w*$/';
 $identifier = getQueryStringParameter('identifier');
-if (preg_match("/\w/", $identifier)
+if (preg_match($patern_identifier, $identifier))
 {
-  printf("It is not identifier");
+    echo("This is an identifier");
 }
 else
 {
-    echo('Everything OK');
+    echo('This is not an identifier');
 }
 
 function getQueryStringParameter(string $name): ?string
