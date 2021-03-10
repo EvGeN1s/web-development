@@ -1,7 +1,7 @@
 <?php
 
 header("Content-Type: text/plain");
-$patern_identifier = '/^[a-zA-z]\w*$/';
+$patern_identifier = '/^[a-zA-z][a-zA-z\d]*$/';
 $identifier = getQueryStringParameter('identifier');
 if (preg_match($patern_identifier, $identifier))
 {
