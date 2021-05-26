@@ -16,7 +16,6 @@ if($email === null)
 }
 else
 {
-    
     fwrite($file, "$firstName $lastName $age $email");
     fclose($file);
 } 

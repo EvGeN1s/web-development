@@ -1,0 +1,55 @@
+.feedback
+{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.feedback__field-name
+{
+    font: 400 20px/32px "Open Sans";
+    margin-bottom: 3px;
+}
+
+.feedback__email
+{
+    max-width: 533px;
+    width: 80%;
+    height: 43px;
+    margin-bottom: 6px;
+    font: 400 16px/32px "Open Sans";
+}
+
+.feedback__send
+{
+    display: block;
+    font: 19px/32px "Georgia";
+    color: #fff;
+    background-color: #15a98c;
+    margin: 44px 0 0 0;
+    padding: 9px 62px 9px 63px;
+    border: 0 solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.feedbacks-result__error-msg
+{
+    width: 50%;
+    margin: 0 auto;
+    font: 400 15px/32px "Open Sans";
+    color: red;
+}
+
+.feedbacks-result__data
+{
+    width: 50%;
+    margin: 1% auto;
+}
+
+.back-to-main
+{
+    margin-left: 25%;
+    color: #15a98b;
+    font: 800 12px/33px "Georgia";
+}
