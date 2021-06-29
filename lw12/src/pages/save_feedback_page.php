@@ -35,7 +35,7 @@ function saveFeedbackPage()
             'gender' => $gender,
             'message' => $user_message,
         ];
-        file_put_contents($file, serialize($data));
+        saveFeedback($data);
 
 
         mainPage(['accept_msg' => ACCEPT_MSG]);

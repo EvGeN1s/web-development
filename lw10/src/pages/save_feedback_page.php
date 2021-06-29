@@ -1,7 +1,5 @@
 <?php
 
-
-
 function saveFeedbackPage()
 {
     $errors = [];
@@ -24,6 +22,7 @@ function saveFeedbackPage()
 
     if ($valid_page)
     {
+
         $dir =  realpath( __DIR__ . '/../../data');
         if(!opendir($dir))
             mkdir($dir);
@@ -36,8 +35,6 @@ function saveFeedbackPage()
             'message' => $user_message,
         ];
         file_put_contents($file, serialize($data));
-
-
         mainPage(['accept_msg' => ACCEPT_MSG]);
     }
 
@@ -46,7 +43,6 @@ function saveFeedbackPage()
         if (!$valid_mail)
         {
             $errors['email_error_msg'] = EMAIL_ERROR_MSG;
-
         }
 
         if (!$valid_name)
